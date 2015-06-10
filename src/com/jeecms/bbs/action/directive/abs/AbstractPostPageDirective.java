@@ -21,6 +21,7 @@ import freemarker.template.TemplateModel;
  */
 public abstract class AbstractPostPageDirective implements
 		TemplateDirectiveModel {
+	
 
 	/**
 	 * 输入参数，主题ID。
