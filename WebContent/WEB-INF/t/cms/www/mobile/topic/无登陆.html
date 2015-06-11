@@ -6,9 +6,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="format-detection" content="telephone=no">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>${site.name} - JEECMS官方论坛|开源java cms,jsp cms,jsp bbs</title>
-<meta name="keywords" content="java,cms,jsp,cms,jsp bbs,开源网站内容管理系统,网站群,站群,多站点,jeecms" />
-<meta name="description" content="讨论jsp cms、jsp bbs相关资讯，struts,hibernate,spring,freemarker最新技术研究" /> 
+<title>${site.name} - sodayin官方论坛|开源java cms,jsp cms,jsp bbs</title>
+<meta name="keywords" content="3d打印" />
+<meta name="description" content="3d打印" /> 
 <link href="${resSys}/front.css" rel="stylesheet" type="text/css"/>
 <script src="${resSys}/jquery.js" type="text/javascript"></script>
 <script src="${resSys}/front.js" type="text/javascript"></script>
@@ -26,11 +26,11 @@
 				<li>[@s.m "error.invalidPassword"/]</li>
 				[#elseif error=="org.apache.shiro.authc.UnknownAccountException"]
 				<li>[@s.m "error.usernameNotExist"/]</li>
-				[#elseif error=="com.jeecms.common.security.CaptchaErrorException"]
+				[#elseif error=="com.sodayin.common.security.CaptchaErrorException"]
 				<li>[@s.m "error.invalidCaptcha"/]</li>
-				[#elseif error=="com.jeecms.common.security.DisabledException"]
+				[#elseif error=="com.sodayin.common.security.DisabledException"]
 				<li>[@s.m "error.userDisabled"/]</li>
-				[#elseif error=="com.jeecms.common.security.InactiveException"]
+				[#elseif error=="com.sodayin.common.security.InactiveException"]
 				<li>[@s.m "error.userInActive"/]</li>
 					[/#if]
 			</ul>
