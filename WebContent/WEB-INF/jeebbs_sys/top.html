@@ -2,21 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<title>sodayin Administrator's Control Panel - powered by sodayin</title>
-<#include "/sodayin_sys/head.html"/>
+<title>JEECMS Administrator's Control Panel - Powered by sodayin</title>
+<#include "/jeebbs_sys/head.html"/>
 <style type="text/css">
 *{margin:0;padding:0}
 html{height:100%;overflow:hidden;}
 body{height:100%;}
-#logout{color:#FFF;padding-left:5px; background:url(${base}/res/sodayin/img/admin/logout.jpg) no-repeat;}
-#welcome{color:#FFF;padding:0 10px 0 5px; background:url(${base}/res/sodayin/img/admin/msg.jpg) no-repeat 3px;}
+#logout{color:#FFF;padding-left:5px; background:url(${base}/res/jeecms/img/admin/logout.jpg) no-repeat;}
+#welcome{color:#FFF;padding:0 10px 0 5px; background:url(${base}/res/jeecms/img/admin/msg.jpg) no-repeat 3px;}
 #view_index{color:#FFF;}
 
 .menu{padding-left:1em;font-size:12px;font-weight:700;float:left;margin:4px 4px 0 0;list-style:none;}
 .menu li{float:left;width:60px;}
-.menu li.sep{float:left;height:35px;width:10px;background:url(${base}/res/sodayin/img/admin/sep.jpg) left 3px no-repeat;}
+.menu li.sep{float:left;height:35px;width:10px;background:url(${base}/res/jeecms/img/admin/sep.jpg) left 3px no-repeat;}
 .menu li a{display:block;height:35px;float:left;line-height:35px;padding:0 14px;color:#000;outline:none;hide-focus:expression(this.hideFocus=true);}
-.menu li.current{background:url(${base}/res/sodayin/img/admin/nav_current.jpg) left top no-repeat;}
+.menu li.current{background:url(${base}/res/jeecms/img/admin/nav_current.jpg) left top no-repeat;}
 .menu li.current a{color:#fff;}
 
 .undis{display:none;}
@@ -46,11 +46,11 @@ function changeSite(siteId) {
     <td width="223">
 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td><img src="${base}/res/sodayin/img/admin/logo.jpg"></td>
+        <td><img src="${base}/res/jeecms/img/admin/logo.jpg"></td>
       </tr>
       <tr>
-        <td height="33" align="center" background="${base}/res/sodayin/img/admin/time_bg.jpg">
-		<img src="${base}/res/sodayin/img/admin/ico3.jpg">&nbsp;现在时间：
+        <td height="33" align="center" background="${base}/res/jeecms/img/admin/time_bg.jpg">
+		<img src="${base}/res/jeecms/img/admin/ico3.jpg">&nbsp;现在时间：
        <script language="javascript">
 		var day="";
 		var month="";
@@ -84,12 +84,12 @@ function changeSite(siteId) {
     </table></td>
     <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td width="15" height="54"><img src="${base}/res/sodayin/img/admin/top_bg.jpg"></td>
-        <td background="${base}/res/sodayin/img/admin/top_bg.jpg"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <td width="15" height="54"><img src="${base}/res/jeecms/img/admin/top_bg.jpg"></td>
+        <td background="${base}/res/jeecms/img/admin/top_bg.jpg"><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
           <tr>
             <td width="260" height="30">
-			<img src="${base}/res/sodayin/img/admin/ico1.gif"><span id="welcome">欢迎&nbsp;${user.username!}</span>
-			<img src="${base}/res/sodayin/img/admin/ico2.jpg"><a href="logout.do?returnUrl=index.do" target="_top" id="logout" onclick="return confirm('<@s.m "global.confirm.logout"/>');"><@s.m "global.admin.logout"/></a></td>
+			<img src="${base}/res/jeecms/img/admin/ico1.gif"><span id="welcome">欢迎&nbsp;${user.username!}</span>
+			<img src="${base}/res/jeecms/img/admin/ico2.jpg"><a href="logout.do?returnUrl=index.do" target="_top" id="logout" onclick="return confirm('<@s.m "global.confirm.logout"/>');"><@s.m "global.admin.logout"/></a></td>
             <td align="right">
             <form action="index.do" target="_top" method="get">
 			<select name="${siteParam}" onchange="this.form.submit();">
@@ -109,8 +109,8 @@ function changeSite(siteId) {
         </table></td>
       </tr>
       <tr>
-        <td><img src="${base}/res/sodayin/img/admin/top_07.jpg"></td>
-        <td background="${base}/res/sodayin/img/admin/nav_bg.jpg">
+        <td><img src="${base}/res/jeecms/img/admin/top_07.jpg"></td>
+        <td background="${base}/res/jeecms/img/admin/nav_bg.jpg">
 		   <ul class="menu">
 			<li class="current" id="tb_11" onclick="HoverLi(1,1,8);"><a href="main.do" target="mainFrame">首页</a></li>
 			<li class="sep"></li><li id="tb_12" onclick="HoverLi(1,2,8);"><a href="frame/category_main.do" target="mainFrame">分区</a></li>
